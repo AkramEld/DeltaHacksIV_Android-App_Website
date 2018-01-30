@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>AlarmSafe </title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+  <link rel="stylesheet" href="index.css">
+  <link rel = "stylesheet" href="index.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="main.js"></script>
+
+</head>
+
+<body style=" background-color: lightblue;">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: black;">
+  <div class="container">
+    <img IMG HEIGHT="55" WIDTH="55"  src="icon.jpg" alt="..." class="img-thumbnail" id="icon">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">About
+
+          </a>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+
+  <div id ="container">
+  </br>
+  <div style="margin-top:50px; color:blue; font-family:verdana; font-family:verdana; font-size:30px;">
+
+  <p><center>Get to Work.. On time!</center></p>
+
+  </div>
+</br></br></br></br></br></br></br></br></br></br>
+
+    <div class = "row" style="marin-left:50px">
+      <div class = "col-md-3">
+      </div>
+      <div class = "col-md-2">
+        <div class="form-group">
+      <label for="usr"> <b>Home Address:</b></label>
+      <form>
+      <input type="text" class="form-control" id="home" name="home">
+    </form>
+    </div>
+
+      </div>
+
+      <div class = "col-md-2">
+        <label for="usr"><b>Destination:</b></label>
+        <form>
+        <input type="text" class="form-control" id="destination" name="destination">
+      </form>
+      </div>
+
+      <div class = "col-md-2">
+        <label for="usr"><b>Time of Arrival Needed:</b></label>
+        <form>
+        <input type="text" class="form-control" id="arrivaltime" name="arrivaltime">
+      </form>
+      </div>
+    </div>
+
+
+  <div id="entry" style="margin-left:570px ">
+<br>
+  <button type="button" class="btn btn-primary" name="calculate" id="calculate">Set Information</button>
+
+  </div>
+
+
+</div>
+<div class="form-group row">
+
+<div id="entry" style="margin-left:550px " class="col-xs-2">
+  <br><br><br><br><br><br>
+  <label for="usr"> <b>Time of Arrival?</b></label>
+  <form>
+    <label class="radio-inline">
+      <input type="radio" name="option">On Time
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="option">Early
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="option">Late
+    </label>
+  </form>
+<br>
+<button type="button" class="btn btn-primary" name="update" id="update">Update</button>
+
+</div>
+</div>
+</body>
+
+
+<script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDPqXFqgDYhpw6kGNXaefj9EVmxRsYe_bI",
+    authDomain: "alarmsafe-74523.firebaseapp.com",
+    databaseURL: "https://alarmsafe-74523.firebaseio.com",
+    projectId: "alarmsafe-74523",
+    storageBucket: "alarmsafe-74523.appspot.com",
+    messagingSenderId: "822956699458"
+  };
+  firebase.initializeApp(config);
+</script>
